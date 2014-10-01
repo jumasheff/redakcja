@@ -1,6 +1,9 @@
-cd $WORKSPACE
-virtualenv -q ve
-source ./ve/bin/activate
-pip install -q -E ./ve -r requirements.txt
-pip install -q -E ./ve -r requirements-test.txt
+#!/bin/sh
+
+export WORKON_HOME=~/.virtualenvs/
+. /usr/local/bin/virtualenvwrapper.sh
+
+workon redakcja
+pip install -r requirements.txt
+pip install -r requirements-test.txt
 django-admin.py test --settings=redakcja.settings.test
