@@ -10,7 +10,7 @@ TEMPLATE_DEBUG = DEBUG
 MAINTENANCE_MODE = False
 
 ADMINS = (
-    (u'Radek Czajka', 'radoslaw.czajka@nowoczesnapolska.org.pl'),
+    (u'Murat Jumashev', 'jumasheff@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -20,11 +20,11 @@ MANAGERS = ADMINS
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Europe/Warsaw'
+TIME_ZONE = 'Asia/Bishkek'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'pl'
+LANGUAGE_CODE = 'en'
 
 #import locale
 #locale.setlocale(locale.LC_ALL, '')
