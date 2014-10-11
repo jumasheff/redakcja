@@ -49,8 +49,8 @@ STATICFILES_DIRS = [
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = '/media/dynamic/'
-STATIC_URL = '/media/static/'
+MEDIA_URL = '/dynamic/'
+STATIC_URL = '/static/'
 
 SESSION_COOKIE_NAME = "redakcja_sessionid"
 
