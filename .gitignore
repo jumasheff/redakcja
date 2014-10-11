@@ -35,3 +35,4 @@ node_modules
 /static_test
 chromedriver.log
 fabfile.py
+.idea
