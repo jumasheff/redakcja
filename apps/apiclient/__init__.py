@@ -1,6 +1,6 @@
+import json
 import urllib
 
-from django.utils import simplejson
 import oauth2
 
 from apiclient.models import OAuthConnection
@@ -28,7 +28,7 @@ def api_call(user, path, data=None):
     token = oauth2.Token(conn.token, conn.token_secret)
     client = oauth2.Client(wl_consumer, token)
     if data is not None:
-        data = simplejson.dumps(data)
+        data = json.dumps(data)
         data = urllib.urlencode({"data": data})
         resp, content = client.request(
                 "%s%s" % (WL_API_URL, path),
@@ -40,7 +40,7 @@ def api_call(user, path, data=None):
     status = resp['status']
 
     if status == '200':
-        return simplejson.loads(content)
+        return json.loads(content)
     elif status.startswith('2'):
         return
     elif status == '401':

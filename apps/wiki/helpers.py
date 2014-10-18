@@ -2,7 +2,7 @@ from datetime import datetime
 from functools import wraps
 
 from django import http
-from django.utils import simplejson as json
+import json
 from django.utils.functional import Promise
 
 
