@@ -12,10 +12,10 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Auth
-    url(r'^accounts/login/$', 'django_cas.views.login', name='login'),
-    url(r'^accounts/logout/$', 'django_cas.views.logout', name='logout'),
-    url(r'^admin/login/$', 'django_cas.views.login', name='login'),
-    url(r'^admin/logout/$', 'django_cas.views.logout', name='logout'),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.login', name='logout'),
+    url(r'^admin/login/$', 'django.contrib.auth.views.login', name='login'),
+    url(r'^admin/logout/$', 'django.contrib.auth.views.logout', name='logout'),
 
     # Admin panel
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
