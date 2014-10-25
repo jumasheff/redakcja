@@ -147,7 +147,7 @@ BROKER_PASSWORD = "guest"
 BROKER_VHOST = "/"
 
 SHOW_APP_VERSION = False
-
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 try:
     from redakcja.settings.compress import *
 except ImportError:
